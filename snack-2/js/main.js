@@ -6,7 +6,6 @@ const numberInput = Number(prompt('Inserisci un numero'));
 
 if(numberInput % 2==0){
    console.log(numberInput);
-   
  }
  else {
     console.log(numberInput + 1);
