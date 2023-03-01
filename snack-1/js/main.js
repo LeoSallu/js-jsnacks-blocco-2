@@ -1,15 +1,20 @@
 'use strict';
 
-for(let i=0; i<=5; i++){
-    const input= Number(prompt('Inserisci un numero'));
-    console.log(input);
-};
+// for(let i=0; i<=5; i++){
+//     const input= Number(prompt('Inserisci un numero'));
+//     console.log(input);
+// };
 
-let inputNum = 0;
+let sum = 0;
+let inputNum = 1;
 
-while(inputNum < 5){
-    inputNum++;
-    const input = Number(prompt('Inserisci un numero')); 
-    console.log(input);
-    inputNum<5;
+
+while(inputNum <= 5){
+    const input = Number(prompt(`Inserisci un numero (${inputNum})`));
+    
+    if(!isNaN(input)){
+        sum += input;
+        inputNum++;     
+    }
 }
+alert(sum);
